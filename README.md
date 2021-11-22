@@ -1,5 +1,4 @@
 # tuxtools
-tools cli commands for speed work
 
  tuxHelper | Muestra la lista de utilidades actuales de @sadhtux
 
@@ -13,5 +12,3 @@ tools cli commands for speed work
  a procesar las imagenes (Ej: ./2021/Enero a Diciembre)
 
  youtube-dl | Descarga Videos desde youtube y otros sitios mas
-
-|------------------------------------------------------------------|
