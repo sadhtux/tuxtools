@@ -1,0 +1,17 @@
+#! /bin/bash
+if [ -n "$1" ]; then
+  clear
+  echo "------------------------------------------------------------------"
+  echo "Creando estructura de directorios para el año elegido" $1
+  echo "------------------------------------------------------------------"
+  mkdir ./$1/{Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre} -p
+  tree ./$1
+else
+  clear
+  echo "--------------------------------------------------"
+  echo " Error: Debe Elegir un nombre de directorio Raiz. "
+  echo " Modo de uso: ./tuxCreateSkell 2021               "
+  echo "--------------------------------------------------"
+  echo ""
+fi
+exit
