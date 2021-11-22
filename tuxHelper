@@ -1,0 +1,24 @@
+#!/bin/bash
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+clear
+echo "|------------------------------------------------------------------|"
+echo " ${green}Tux Helper Linux Tools by @sadhtux at github.com${reset} "
+echo "|------------------------------------------------------------------|"
+echo ""
+echo " ${red}tuxHelper${reset} | Muestra la lista de utilidades actuales de @sadhtux"
+echo ""
+echo " ${red}tuxResizeImages${reset} |  Usa mogrify para reconvertir imagenes JPG "
+echo " en un 45% de su tamaño original                                            "
+echo ""
+echo " ${red}tuxRenameImages${reset} | Renombra todas las imagenes del directorio "
+echo " actual con el patron dia-mes-ano_hora-minuto-segundos usando exiv2         "
+echo ""
+echo " ${red}tuxCreateSkel${reset} | Creamos Carpeta para el Año en el que vamos  "
+echo " a procesar las imagenes (Ej: ./2021/Enero a Diciembre)"
+echo ""
+echo " ${red}youtube-dl${reset} | Descarga Videos desde youtube y otros sitios mas"
+echo ""
+echo "|------------------------------------------------------------------|"
+exit
