@@ -33,6 +33,11 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "---------------------------"
     curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxResizeImages -o /usr/local/bin/tuxResizeImages
     chmod a+rx /usr/local/bin/tuxResizeImages
+    echo "---------------------------"
+    echo "Instalando: tuxCreateSkell"
+    echo "---------------------------"
+    curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxCreateSkell -o /usr/local/bin/tuxCreateSkell
+    chmod a+rx /usr/local/bin/tuxCreateSkell
 else
     echo "Distro desconocida."
     echo "Saliendo"
