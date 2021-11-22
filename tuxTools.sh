@@ -15,7 +15,7 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "Instalando dependencias:"
     echo "------------------------"
     echo ""
-    /usr/bin/apt-get -o APT::Install-Suggests="true" install -y imagemagick ncdu nmap fping net-tools netcat bind9-utils exiv2 rename curl htop git fdupes testdisk lsb-release neofetch ffmpeg
+    /usr/bin/apt-get -o APT::Install-Suggests="true" install -y imagemagick ncdu nmap fping net-tools netcat bind9-utils exiv2 rename curl htop git tree fdupes testdisk lsb-release neofetch ffmpeg
     echo "----------------------------------------------"
     echo "Descargando e instalando Utilidades  @sadhtux "
     echo "----------------------------------------------"
