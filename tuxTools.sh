@@ -19,13 +19,18 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "----------------------------------------------"
     echo "Descargando e instalando Utilidades  @sadhtux "
     echo "----------------------------------------------"
-    echo "youtube-dl"
+    echo ""
+    echo "----------------------"
+    echo "Instalando: youtube-dl"
+    echo "----------------------"
     rm -rf /usr/local/bin/youtube-dl 2>/dev/null
     curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
     chmod a+rx /usr/local/bin/youtube-dl
     echo "version final youtube-dl:"
     /usr/local/bin/youtube-dl --version
-    /usr/bin/sleep 2
+    echo "---------------------------"
+    echo "Instalando: tuxResizeImages"
+    echo "---------------------------"
     curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxResizeImages -o /usr/local/bin/tuxResizeImages
     chmod a+rx /usr/local/bin/tuxResizeImages
 else
