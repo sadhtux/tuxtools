@@ -46,7 +46,7 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "---------------------------"
     echo "Instalando: tuxRenameImages"
     echo "---------------------------"
-    curl -L https://github.com/sadhtux/tuxtools/edit/main/tuxRenameImages -o /usr/local/bin/tuxRenameImages
+    curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxRenameImages -o /usr/local/bin/tuxRenameImages
     chmod a+rx /usr/local/bin/tuxRenameImages
 else
     echo "Distro desconocida."
