@@ -1,0 +1,19 @@
+#! /bin/bash
+if [ -n "$1" ]; then
+  clear
+  echo "------------------------------------------------------------------"
+  echo "Reconvirtiendo al : $1% "
+  echo "------------------------------------------------------------------"
+  ### renombrando a extensiones minusculas
+  /usr/bin/rename 'y/A-Z/a-z/' *JPG 2>/dev/null
+  /usr/bin/mogrify -verbose -resize $1% *.jpg 2>/dev/null
+else
+  clear
+  echo "------------------------------------------------------------------"
+  echo "Al no especificar el porcentaje se"
+  echo "convierte por defecto al 45%"
+  echo "------------------------------------------------------------------"
+read -p "Presione cualquier tecla para continuar o Ctrl + C Para Cancelar "
+  /usr/bin/mogrify -verbose -resize 45% *.jpg 2>/dev/null
+fi
+exit
