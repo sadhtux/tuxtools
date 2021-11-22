@@ -1,0 +1,4 @@
+#! /bin/bash
+## Buscar y reemplazar con find (Solo un nivel) y renombrar con exiv2 ##
+find . -maxdepth 1 -type f -iname '*.jpg' -exec exiv2 -v -F -k -r'%d-%m-%Y_%H%M%S' {} \;
+exit
