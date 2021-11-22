@@ -29,6 +29,11 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "version final youtube-dl:"
     /usr/local/bin/youtube-dl --version
     echo "---------------------------"
+    echo "Instalando: tuxHelper"
+    echo "---------------------------"
+    curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxHelper -o /usr/local/bin/tuxHelper
+    chmod a+rx /usr/local/bin/tuxHelper
+    echo "---------------------------"
     echo "Instalando: tuxResizeImages"
     echo "---------------------------"
     curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxResizeImages -o /usr/local/bin/tuxResizeImages
@@ -38,6 +43,11 @@ if [ "$DISTRO" = "Debian" ]; then
     echo "---------------------------"
     curl -L https://raw.githubusercontent.com/sadhtux/tuxtools/main/tuxCreateSkell -o /usr/local/bin/tuxCreateSkell
     chmod a+rx /usr/local/bin/tuxCreateSkell
+    echo "---------------------------"
+    echo "Instalando: tuxRenameImages"
+    echo "---------------------------"
+    curl -L https://github.com/sadhtux/tuxtools/edit/main/tuxRenameImages -o /usr/local/bin/tuxRenameImages
+    chmod a+rx /usr/local/bin/tuxRenameImages
 else
     echo "Distro desconocida."
     echo "Saliendo"
